@@ -686,7 +686,7 @@ bool ShowLegendEntries(ImPlotItemGroup& items, const ImRect& legend_bb, bool hov
             any_item_hovered = true;
         }
         else {
-            col_txt_hl = ImGui::GetColorU32(col_txt);
+            col_txt_hl = ImGui::GetColorU32( static_cast<int>(col_txt));
         }
         ImU32 col_icon;
         if (item_hld)
